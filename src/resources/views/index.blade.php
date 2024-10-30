@@ -14,7 +14,7 @@
   <header class="header">
     <div class="header__inner">
       <a class="header__logo" href="/">
-        FashionablyLate
+        <h1>FashionablyLate</h1>
       </a>
     </div>
   </header>
@@ -24,8 +24,9 @@
       <div class="contact-form__heading">
         <h2>Register</h2>
       </div>
-      <form class="form">
-        <div class="form__group">
+      <form class="form" action="/contacts/confirm" method="post">
+        @csrf
+      <div class="form__group">
           <div class="form__group-title">
             <span class="form__label--item">お名前</span>
             <span class="form__label--required">※</span>
@@ -63,7 +64,7 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--text">
-              <input type="tel" name="tel" placeholder="coachtech1106" />
+              <input type="password" name="password" placeholder="coachtech1106" />
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->
