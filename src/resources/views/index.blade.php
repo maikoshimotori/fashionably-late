@@ -1,25 +1,11 @@
-<!DOCTYPE html>
-<html lang="ja">
+@extends('layouts.app')
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FashionablyLate</title>
-  <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}" />
-  <link rel="stylesheet" href="{{ asset('css/index.css') }}" />
-</head>
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/index.css') }}">
+@endsection
 
-<body>
-  <header class="header">
-    <div class="header__inner">
-      <a class="header__logo" href="/">
-        <h1>FashionablyLate</h1>
-      </a>
-    </div>
-  </header>
+@section('content')
 
-  <main>
     <div class="contact-form__content">
       <div class="contact-form__heading">
         <h2>Register</h2>
@@ -33,11 +19,13 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--text">
-              <input type="text" name="name" placeholder="山田太郎" />
+              <input type="text" name="name" placeholder="山田太郎" value="{{ old('name') }}" />
             </div>
             @error('name')
             <div class="form__error">
+                @error('name')
                 {{ $message }}
+                @enderror
               <!--バリデーション機能を実装したら記述します。-->
             </div>
             @enderror
@@ -50,10 +38,12 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--text">
-              <input type="email" name="email" placeholder="test@example.com" />
+              <input type="email" name="email" placeholder="test@example.com" value="{{ old('email') }}" />
             </div>
             <div class="form__error">
-              <!--バリデーション機能を実装したら記述します。-->
+                @error('email')
+                {{ $message }}
+                @enderror
             </div>
           </div>
         </div>
@@ -64,10 +54,12 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--text">
-              <input type="password" name="password" placeholder="coachtech1106" />
+              <input type="password" name="password" placeholder="coachtech1106"  value="{{ old('tel') }}"/>
             </div>
             <div class="form__error">
-              <!--バリデーション機能を実装したら記述します。-->
+                @error('password')
+                {{ $message }}
+                @enderror
             </div>
           </div>
         </div>
@@ -76,7 +68,4 @@
         </div>
       </form>
     </div>
-  </main>
-</body>
-
-</html>
+@endsection
