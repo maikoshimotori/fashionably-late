@@ -5,7 +5,7 @@
     <title>ユーザー登録</title>
 </head>
 <body>
-    <h1>Contact Form - Register</h1>
+    <h1>FashionablyLate - Register</h1>
     <form action="{{ route('register') }}" method="POST">
         @csrf
         <label for="name">お名前 ※</label>

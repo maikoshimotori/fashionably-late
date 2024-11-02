@@ -60,6 +60,7 @@ return [
     ],
     'features' => [
         Features::registration(),
+        Features::login(),
         Features::resetPasswords(),
         Features::emailVerification(),
         Features::updateProfileInformation(),

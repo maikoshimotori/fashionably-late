@@ -26,7 +26,6 @@
                 @error('name')
                 {{ $message }}
                 @enderror
-              <!--バリデーション機能を実装したら記述します。-->
             </div>
             @enderror
           </div>

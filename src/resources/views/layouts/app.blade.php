@@ -15,9 +15,15 @@
   <header class="header">
     <div class="header__inner">
       <a class="header__logo" href="/">
-        Contact Form
+        FashionablyLate
       </a>
     </div>
+    <nav>
+            <ul>
+                <!-- 登録リンク -->
+                <li><a href="{{ route('register') }}">login</a></li>
+            </ul>
+        </nav>
   </header>
 
   <main>
