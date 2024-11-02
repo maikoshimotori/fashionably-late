@@ -20,8 +20,8 @@
     </div>
     <nav>
             <ul>
-                <!-- 登録リンク -->
-                <li><a href="{{ route('register') }}">login</a></li>
+                <!-- ログインリンク -->
+                <li><a href="{{ route('login') }}">login</a></li>
             </ul>
         </nav>
   </header>

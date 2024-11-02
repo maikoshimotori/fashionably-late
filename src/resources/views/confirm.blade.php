@@ -7,7 +7,7 @@
 @section('content')
     <div class="confirm__content">
       <div class="confirm__heading">
-        <h2>お問い合わせ内容確認</h2>
+        <h2>Login</h2>
       </div>
       <?php print_r($contact['name']) ?>
       <form class="form" action="/contacts" method="post">
@@ -35,7 +35,7 @@
           </table>
         </div>
         <div class="form__button">
-          <button class="form__button-submit" type="submit">送信</button>
+          <button class="form__button-submit" type="submit">ログイン</button>
         </div>
       </form>
     </div>
