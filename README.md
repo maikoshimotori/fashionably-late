@@ -32,7 +32,11 @@ Laravel環境構築
 
  ER図
 
+<<<<<<< HEAD
 ![図の説明](images/drawio.png)
+=======
+![図の説明](images/diagram.drawio.png)
+>>>>>>> 8f84a9f (Resolve merge conflicts)
 
 
 *URL*
@@ -40,8 +44,11 @@ Laravel環境構築
 　・開発環境：http://localhost/
 
 　・phpMyAdmin:http://localhost:8080/
+<<<<<<< HEAD
 
   
 
  
  
+=======
+>>>>>>> 8f84a9f (Resolve merge conflicts)
