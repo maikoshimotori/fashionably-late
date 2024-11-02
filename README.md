@@ -30,6 +30,11 @@ Laravel環境構築
   
 　・MySQL　8.0
 
+ ER図
+
+![図の説明](images/diagram.drawio.png)
+
+
 *URL*
 
 　・開発環境：http://localhost/
