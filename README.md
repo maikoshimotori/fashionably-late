@@ -32,7 +32,7 @@ Laravel環境構築
 
  ER図
 
-![図の説明](images/diagram.drawio.png)
+![図の説明](\\wsl.localhost\Ubuntu\home\maiko\coachtech\laravel\fashionably-late\.drawio.png)
 
 
 *URL*
