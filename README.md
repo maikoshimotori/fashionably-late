@@ -4,7 +4,7 @@
 
 Dockerビルド
 
-　1.git clone 
+　1.git clone git@github.com:maikoshimotori/fashionably-late.git
 
 　2.DockerDesktopアプリを立ち上げる
   
