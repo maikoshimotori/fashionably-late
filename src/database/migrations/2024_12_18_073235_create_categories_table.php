@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddExtraFieldsToContactsTable extends Migration
+class CreateCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,10 @@ class AddExtraFieldsToContactsTable extends Migration
      */
     public function up()
     {
-        Schema::table('contacts', function (Blueprint $table) {
-            //
+        Schema::create('categories', function (Blueprint $table) {
+            $table->id();
+            $table->string('content');
+            $table->timestamps();
         });
     }
 
@@ -25,8 +27,6 @@ class AddExtraFieldsToContactsTable extends Migration
      */
     public function down()
     {
-        Schema::table('contacts', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('categories');
     }
 }
